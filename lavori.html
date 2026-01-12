@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Le Opere d’Oro — Impresa Edile</title>
+  <meta name="description" content="Le Opere d’Oro - Costruzioni e ristrutturazioni di lusso. Progetti su misura, materiali premium, artigianalità e precisione." />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+        <a class="brand-link" href="index.html" aria-label="Le Opere d'Oro - Home">
+          <img src="logo.png" alt="Le Opere d'Oro - Logo" class="brand-img" onerror="this.style.display='none'">
+          <span class="brand-name">LE OPERE D’ORO</span>
+        </a>
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lavori.html" class="active">Lavori</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="wrap container-lg">
+        <h1 class="section-title">Portfolio lavori</h1>
+        <p class="lead">Galleria di interventi selezionati — clicca per ingrandire.</p>
+      </div>
+    </section>
+
+    <section class="section gallery-section fade-in">
+      <div class="wrap container-lg">
+        <div class="grid grid-3 work-grid-gallery">
+          <figure class="grid-item">
+            <img data-src="https://source.unsplash.com/1000x700/?luxury-villa" alt="Villa di pregio" class="lazy">
+            <figcaption>Villa di pregio — Milano</figcaption>
+          </figure>
+          <figure class="grid-item">
+            <img data-src="https://source.unsplash.com/1000x700/?modern-interior" alt="Interni di pregio" class="lazy">
+            <figcaption>Interni su misura — Roma</figcaption>
+          </figure>
+          <figure class="grid-item">
+            <img data-src="https://source.unsplash.com/1000x700/?construction-site" alt="Cantiere" class="lazy">
+            <figcaption>Cantiere struttura — Torino</figcaption>
+          </figure>
+          <figure class="grid-item">
+            <img data-src="https://source.unsplash.com/1000x700/?renovation" alt="Ristrutturazione" class="lazy">
+            <figcaption>Ristrutturazione — Firenze</figcaption>
+          </figure>
+          <figure class="grid-item">
+            <img data-src="https://source.unsplash.com/1000x700/?facade,modern" alt="Facciata moderna" class="lazy">
+            <figcaption>Facciata moderna — Bologna</figcaption>
+          </figure>
+          <figure class="grid-item">
+            <img data-src="https://source.unsplash.com/1000x700/?interior,kitchen" alt="Cucina di lusso" class="lazy">
+            <figcaption>Cucina di lusso — Milano</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lb" class="lightbox" aria-hidden="true" role="dialog" aria-label="Visualizzazione immagine">
+      <button class="lightbox-close" aria-label="Chiudi">×</button>
+      <img class="lightbox-img" alt="">
+      <div class="lightbox-caption"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>© <span id="year2">2025</span> Le Opere d’Oro</div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

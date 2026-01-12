@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Contatti — Le Opere d’Oro</title>
+  <meta name="description" content="Contattaci per preventivi e sopralluoghi. Le Opere d’Oro - Impresa edile di lusso.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Vai al contenuto</a>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="wrap header-inner">
+
+    <div class="brand">
+      <a href="index.html" class="brand-link">
+        <img src="logo.png" alt="Le Opere d'Oro - Logo" class="brand-img" onerror="this.style.display='none'">
+        <span class="brand-name">LE OPERE D’ORO</span>
+      </a>
+    </div>
+
+    <nav class="site-nav" aria-label="Menu principale">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-list" class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lavori.html">Lavori</a></li>
+        <li><a href="contatti.html" class="active">Contatti</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main id="main" class="section">
+  <div class="wrap container-lg">
+
+    <h1 class="section-title fade-in">Contattaci</h1>
+    <p class="lead fade-in">
+      Compila il modulo per richiedere un preventivo o un sopralluogo.
+    </p>
+
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <form id="contact-form" class="card fade-in" novalidate>
+
+        <label for="nome">Nome e Cognome *</label>
+        <input id="nome" type="text" placeholder="Mario Rossi" required>
+
+        <label for="email">Email *</label>
+        <input id="email" type="email" placeholder="email@esempio.it" required>
+
+        <label for="telefono">Telefono</label>
+        <input id="telefono" type="tel" placeholder="+39 333 1234567">
+
+        <label for="messaggio">Messaggio *</label>
+        <textarea id="messaggio" rows="6" placeholder="Descrivi il progetto" required></textarea>
+
+        <button type="submit" class="btn btn-primary">
+          Invia richiesta
+        </button>
+
+        <div id="form-status" class="form-status" aria-live="polite"></div>
+
+      </form>
+<br>
+<br>
+<br>
+<br>
+      <!-- INFO -->
+      <aside class="card fade-in">
+        <h3>CONTATTI</h3>
+        <p><br>Milano</p>
+
+        <p>
+          Tel:
+          <a href="tel:+393898756154">+39 389 875 6154</a>
+        </p>
+
+        <p>
+          Email:
+          <a href="mailto:leoperedoro@gmail.com">leoperedoro@gmail.com</a>
+        </p>
+
+        <h4>Orari</h4>
+        <p>Lun–Ven: 09:00 – 18:00</p>
+      </aside>
+
+    </div>
+
+  </div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+
+    <div class="footer-left">
+      <strong>Le Opere d’Oro</strong><br>
+      Milano • P.IVA 12345678901
+    </div>
+
+    <div class="footer-right">
+      <nav class="footer-nav">
+        <a href="index.html">Home</a> •
+        <a href="lavori.html">Lavori</a> •
+        <a href="contatti.html">Contatti</a>
+      </nav>
+      <div>© <span id="year"></span> Le Opere d’Oro</div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+
+<!-- EmailJS v4 -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
